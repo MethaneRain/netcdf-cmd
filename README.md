@@ -1,8 +1,6 @@
 # netcdf-cmd
 Info on working with Unidata's NetCDF Command Line Tool
 
---- 
-
 ### Merging two netCDF files with same variable along time axis
 
 ---
@@ -43,4 +41,27 @@ ds.variables["time"][:]
 masked_array(data=[0., 6.],
              mask=False,
        fill_value=1e+20)
+
+ds.variables["MSLP_Eta_model_reduction_msl"]
+
+>>>
+<class 'netCDF4._netCDF4.Variable'>
+float32 MSLP_Eta_model_reduction_msl(time, y, x)
+    long_name: MSLP (Eta model reduction) @ Mean sea level
+    units: Pa
+    grid_mapping: LambertConformal_Projection
+    _FillValue: nan
+    missing_value: nan
+    abbreviation: MSLET
+    Grib_Variable_Id: VAR_0-3-192_L101
+    Grib2_Parameter: [  0   3 192]
+    Grib2_Parameter_Discipline: Meteorological products
+    Grib2_Parameter_Category: Mass
+    Grib2_Parameter_Name: MSLP (Eta model reduction)
+    Grib2_Level_Type: 101
+    Grib2_Level_Desc: Mean sea level
+    Grib2_Generating_Process_Type: Forecast
+unlimited dimensions: time
+current shape = (2, 257, 369)
+filling on
 ```
