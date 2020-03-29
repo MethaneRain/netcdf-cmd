@@ -102,7 +102,7 @@ Using Python (or any other netCDF file program):
 
 ```python
 from netCDF4 import Dataset 
-ds = Dataset("/Users/chowdahead/Downloads/new2.nc")
+ds = Dataset("merged.nc")
 
 ds.variables["time"]
 
